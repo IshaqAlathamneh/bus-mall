@@ -1,0 +1,69 @@
+header {
+    position: relative;
+    margin: 0 auto;
+    width: 960px;
+}
+header h1 {
+    text-align: center;
+    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Courgette', cursive;
+    font-size: 80px;
+    color: #290149;
+}
+main {
+    position: relative;
+    margin: 0 auto;
+    width: 960px;
+    border-right: solid;
+    border-right: #f14668;
+    border-left: solid;
+    border-left: #f14668;
+}
+main div {
+    width: 100%;
+    
+
+}
+main div img {
+    width: 32%;
+    height: 280px;
+    margin: 0 auto;
+    border: #f14668;
+    border-style: solid;
+}
+img:hover {
+    opacity: 0.3;
+}
+button {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    padding: 30px;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: xx-large;
+    color: #faf3e0;
+    background-color: #b68973;
+}
+button:hover {
+    color: #eabf9f ;
+    background-color: #1e212d;
+}
+li { font-weight: bold;
+    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Courgette', cursive;
+    font-size: x-large;
+    color: #6b011f;
+}
+body {
+    width: 960px;
+    margin: 0 auto;
+    background-color: #ffd880;
+    
+}
+main h3 {
+    text-align: center;
+    font-size: xx-large;
+    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Courgette', cursive;
+    color: #f14668;
+}
