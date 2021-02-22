@@ -36,7 +36,6 @@ function getRandomNum(){
     let ran = Math.floor( Math.random() * arrOfObjects.length );
     return ran;
  }
- console.log(getRandomNum())
 
 let left , right , middle;
 
@@ -70,9 +69,9 @@ arrOfObjects[rightIndex].show++;
 arrOfObjects[middleIndex].show++;
 }
 render();
-left.addEventListener('click' , clicking)
-right.addEventListener('click' , clicking)
-middle.addEventListener('click' , clicking)
+container.addEventListener('click' , clicking)
+// right.addEventListener('click' , clicking)
+// middle.addEventListener('click' , clicking)
 function clicking (event){
     attempt++;
     console.log(event.target.id)
@@ -100,9 +99,9 @@ render();
         button.removeEventListener('click', viewResults)
     }
 
-    left.removeEventListener('click' , clicking)
-right.removeEventListener('click' , clicking)
-middle.removeEventListener('click' , clicking)
+    container.removeEventListener('click' , clicking)
+// right.removeEventListener('click' , clicking)
+// middle.removeEventListener('click' , clicking)
 }
 
 }
