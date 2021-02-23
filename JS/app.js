@@ -131,11 +131,24 @@ arrOfShow.push(arrOfObjects[j].show);
         chartStretch();
         button.removeEventListener('click', viewResults)
     }
-
+    setLocal()
     container.removeEventListener('click' , clicking)
 }
 
 }
+function setLocal(){
+    let item = JSON.stringify(arrOfObjects);
+localStorage.setItem('product',item);
+}
+function getLocal(){
+    let item = localStorage.getItem('product')
+    let list = JSON.parse(item)
+    if (list){
+    arrOfObjects = list
+    }
+    render();
+}
+getLocal()
 function chart() {
     var ctx = document.getElementById('myChart').getContext('2d');
     var chart = new Chart(ctx, {
